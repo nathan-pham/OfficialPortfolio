@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import "../assets/css/components.scss"
+import "../assets/css/responsive.scss"
+import "../assets/css/globals.scss"
+import "../assets/css/flex.scss"
+import "../assets/css/home.scss"
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }) => {
+  return (
+    <Component { ...pageProps } />
+  )
 }
 
-export default MyApp
+export default App
