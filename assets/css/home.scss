@@ -42,7 +42,7 @@
     .card {
         border-radius: 1rem;
         background-color: var(--primary);
-        padding: 0 2rem;
+        padding: 0 3rem;
         margin: 1rem 0 0 0;
         overflow: hidden;
 
@@ -99,14 +99,16 @@
             img {
                 width: 20rem;
                 position: absolute;
-                bottom: -10rem;
-                transform: rotate(15deg);
+                bottom: -8rem;
+                transform: rotate(10deg);
+                user-select: none;
+                pointer-events: none;
                 transition: transform 0.3s ease;
             }
         }
 
         &:hover .card-right img {
-            transform: rotate(10deg);
+            transform: rotate(5deg);
         }
     }
     
