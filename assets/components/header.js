@@ -11,9 +11,6 @@ const Header = ({ type }) => {
                                 <Link href="/">
                                     <a className="active">Work</a>
                                 </Link>
-                                <Link href="/blog">
-                                    <a>Blog</a>
-                                </Link>
                                 <Link href="/about">
                                     <a>About</a>
                                 </Link>
