@@ -13,6 +13,16 @@
     --card-light: #f5f5fe;
 }
 
+@font-face {
+    font-family: "Ilisarniq"; 
+    src: url("/font/font.eot"); 
+    src: url("/font/font.eot?#iefix") format("embedded-opentype"), 
+        url("/font.woff2") format("woff2"), 
+        url("/font.woff") format("woff"), 
+        url("/font.ttf") format("truetype"), 
+        url("/font.svg#Ilisarniq") format("svg"); 
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -21,7 +31,7 @@ html, body {
     box-sizing: border-box;
     background: var(--bg);
     color: #fff;
-    line-height: 1.3;
+    line-height: 1.2;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -37,6 +47,10 @@ html, body {
 }
 
 .root {
+    .title-font {
+        font-family: Ilisarniq, sans-serif;
+    }
+
     .big {
         font-size: 4rem;
 

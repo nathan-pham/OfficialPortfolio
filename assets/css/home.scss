@@ -4,6 +4,7 @@
         width: 15rem;
         border-radius: 0.5rem;
         user-select: none;
+        pointer-events: none;
     }
     
     .biography {
@@ -36,16 +37,15 @@
     }
 
     .work {
-        margin: 2rem 0 1rem 0;    
+        margin: 2rem 0 0 0;
     }
 
     .card {
         border-radius: 1rem;
         background-color: var(--primary);
         padding: 0 3rem;
-        margin: 1rem 0 0 0;
+        margin: 2rem 0 0 0;
         overflow: hidden;
-
 
         .card-left, .card-right {
             flex: 0 0 50%;
@@ -97,18 +97,43 @@
             position: relative;
 
             img {
-                width: 20rem;
                 position: absolute;
-                bottom: -8rem;
-                transform: rotate(10deg);
                 user-select: none;
                 pointer-events: none;
                 transition: transform 0.3s ease;
+
+                &.iphone {
+                    width: 20rem;
+                    bottom: -8rem;
+                    transform: rotate(10deg);
+                }
+                
+                &.mac {
+                    width: 100%;
+                    transform: scale(1.1);
+                }
             }
         }
 
-        &:hover .card-right img {
+        &.dark {
+            background-color: var(--card-dark);
+        }
+
+        &.light {
+            background-color: var(--card-light);
+            color: var(--txt-black);
+            
+            p {
+                color: var(--txt-sub);
+            }
+        }
+
+        &:hover .card-right img.iphone {
             transform: rotate(5deg);
+        }
+
+        &:hover .card-right img.mac {
+            transform: scale(1.15);
         }
     }
     

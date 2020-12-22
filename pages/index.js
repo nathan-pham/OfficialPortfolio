@@ -8,7 +8,7 @@ const Home = () => {
       <Section>
         <img className="design-logo" src="/images/design.png" alt="Design Logo" />
         <div class="biography">
-          <h1 className="big">Nathan Pham</h1>
+          <h1 className="big title-font">Nathan Pham</h1>
           <p className="big subtitle">Mathematician, designer, farmer, student. Engineer would be stretching the titles a bit.</p>
         </div>
       </Section>
@@ -22,19 +22,33 @@ const Home = () => {
         </div>
       </Section>
       <Section>
-        <h2 className="big subtitle work">Selected Work</h2>
+        <h2 className="title-font big subtitle work">Selected Work</h2>
         <article className="card flex align-stretch">
           <div className="card-left">
             <img src="https://avatars0.githubusercontent.com/u/74814006?s=200&v=4" alt="Archway Logo"/>
             <p>2020 · Archway · Personal Project</p>
-            <h1>Making a toy web framework like React</h1>
+            <h1 className="title-font">Making a toy web framework like React</h1>
             <div className="flex">
               <a href="#">Website</a>
               <a href="#">Github</a>
             </div>  
           </div>
           <div className="card-right flex align-center justify-center">
-            <img src="/images/mockups/archway.png" />
+            <img className="mac" src="/images/mockups/mack.png" />
+          </div>
+        </article>
+        <article className="card flex align-stretch light">
+          <div className="card-left">
+            <img src="https://avatars0.githubusercontent.com/u/74814006?s=200&v=4" alt="Archway Logo"/>
+            <p>2020 · Archway · Personal Project</p>
+            <h1 className="title-font">Making a toy web framework like React</h1>
+            <div className="flex">
+              <a href="#">Website</a>
+              <a href="#">Github</a>
+            </div>  
+          </div>
+          <div className="card-right flex align-center justify-center">
+            <img className="iphone" src="/images/mockups/archway.png" />
           </div>
         </article>
       </Section>
