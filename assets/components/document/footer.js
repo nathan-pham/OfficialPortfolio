@@ -7,8 +7,8 @@ const Footer = () => {
             <span>© 2020 Nathan Pham</span>
             <span>
                 <a href="mailto:nathanpham.me@gmail.com">
-                <i className="fas fa-paper-plane"></i>
-                nathanpham.me@gmail.com
+                    <i className="fas fa-paper-plane"></i>
+                    nathanpham.me@gmail.com
                 </a>
             </span>
             </footer>

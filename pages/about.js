@@ -21,7 +21,7 @@ const Home = () => {
         <p> As a self taught programmer, I often analyze and address issues in my community through technology. For example, I created a website called Neuromates to help dementia patients greatly impacted by the pandemic understand neurodegenerative diseases.</p>
         <p>Currently, I am pursuing summer programs to help further my growth in STEM and research. If you'd like to chat about future adventures and projects, consider contacting me at <a className="link" href="mailto:nathanpham.me@gmail.com">nathanpham.me@gmail.com</a>.</p>
         <div className="resume">
-          Interested in my skills & experience? Download my <a className="link" href="" target="_blank">resume</a>.
+          Interested in my skills & experience? Download my <a className="link" href="/resume.pdf">resume</a>.
         </div>
       </Section>
       {/* <Section>
