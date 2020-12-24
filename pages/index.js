@@ -34,8 +34,8 @@ const Home = (props) => {
           <Social href="mailto:nathanpham.me@gmail.com" icon="fas fa-envelope" />
           <Social href="https://github.com/nathan-pham" icon="fab fa-github" />
           <Social href="https://twitter.com/npham23" icon="fab fa-twitter" />
-          <Social href="https://dev.to" icon="fab fa-dev" />
-          <Social href="https://youtube.com" icon="fab fa-youtube" />
+          <Social href="https://dev.to" icon="fab fa-medium-m" />
+          {/* <Social href="https://youtube.com" icon="fab fa-youtube" /> */}
         </div>
       </Section>
       <Section>

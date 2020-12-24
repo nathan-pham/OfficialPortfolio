@@ -1,4 +1,6 @@
 #root-about {
+    font-size: 1.1rem;
+
     .hero {
         margin: 0;
 
@@ -19,11 +21,16 @@
     }
 
     p {
-        font-size: 1.1rem;
-
         s {
             text-decoration: line-through;
         }
+    }
+
+    .resume {
+        padding: 2rem;
+        background: var(--bg-fade);
+        border-radius: 0.5rem;
+        margin: 2rem 0;
     }
 }
 /*

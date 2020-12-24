@@ -24,12 +24,11 @@ const Home = () => {
           Interested in my skills & experience? Download my <a className="link" href="" target="_blank">resume</a>.
         </div>
       </Section>
-
-        
+      {/* <Section>
+        <h2 className="title-font big subtitle">Latest Blog Posts</h2>
+      </Section> */}
     </Root>
   )
 }
 
-/*
-*/
 export default Home
