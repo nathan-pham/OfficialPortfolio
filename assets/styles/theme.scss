@@ -1,0 +1,25 @@
+.root {
+    font-family: 'Rubik', sans-serif;
+
+    .title-font {
+        font-family: Ilisarniq, sans-serif;
+    }
+
+    .big {
+        font-size: 4rem;
+
+        &.subtitle {
+            font-size: 1.9rem;
+        }
+    }
+
+    .link {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
