@@ -1,17 +1,16 @@
-import Seo from "./seo"
-import Header from "./header"
-import Section from "./section"
+import Header from "./document/header"
+import Footer from "./document/footer"
+import Seo from "./document/seo"
 
-const Root = (props) => {
-    const rootName = `root-${ (props.title || "Home").toLowerCase() }`
+const Root = ({ title, description, children, header }) => {
+    const rootName = `root-${ (title || "Home").toLowerCase() }`
     return (
         <>
-            <Seo title={ props.title } description={ props.description } />
+            <Seo title={ title } description={ description } />
             <div id={ rootName } className="root">
-                <Section>
-                    <Header type={ props.header || "default" } />
-                </Section>
-                { props.children }
+                <Header type={ !header ? "default" : "back" } />
+                { children }
+                <Footer />
             </div>
         </>
     )

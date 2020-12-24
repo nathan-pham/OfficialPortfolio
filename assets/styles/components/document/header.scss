@@ -1,0 +1,24 @@
+header.nav-header {
+    margin: 3rem 0;
+    user-select: none;
+    
+    nav.nav-links a {
+        color: var(--txt-grey);
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin: 0 1rem 0 0;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        transition: color 0.2s ease;
+
+        &.active {
+            background: var(--bg-fade);
+            color: #fff;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

@@ -1,8 +1,8 @@
-const Section = (props) => {
+const Section = ({ children }) => {
     return (
         <section>
             <div className="root-block">
-                { props.children }
+                { children }
             </div>
         </section>
     )

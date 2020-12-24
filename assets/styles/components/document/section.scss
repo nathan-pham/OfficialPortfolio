@@ -1,0 +1,15 @@
+.root {
+    section {
+        background: transparent;
+
+        &.crayola {
+            background-color: var(--crayola);
+        }
+
+        div.root-block {
+            max-width: 57rem;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    }
+}

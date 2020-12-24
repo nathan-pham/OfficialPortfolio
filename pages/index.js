@@ -1,8 +1,25 @@
 import Root from "../assets/components/root"
-import Section from "../assets/components/section"
+import Section from "../assets/components/document/section"
 import Social from "../assets/components/home/social"
+import Project from "../assets/components/home/project"
 
-const Home = () => {
+const generateProjects = (props) => {
+  let projects = []
+  
+  for(const [ key, value ] of Object.entries(props)) {
+    const data = {
+      name: key,
+      ...value
+    }
+    projects.push(
+      <Project { ...data }/>
+    )
+  }
+
+  return projects
+}
+
+const Home = (props) => {
   return (
     <Root title="Home">
       <Section>
@@ -17,54 +34,22 @@ const Home = () => {
           <Social href="mailto:nathanpham.me@gmail.com" icon="fas fa-envelope" />
           <Social href="https://github.com/nathan-pham" icon="fab fa-github" />
           <Social href="https://twitter.com/npham23" icon="fab fa-twitter" />
-          <Social href="https://medium.com/@nathanpham.me" icon="fab fa-medium-m" />
+          <Social href="https://dev.to" icon="fab fa-dev" />
           <Social href="https://youtube.com" icon="fab fa-youtube" />
         </div>
       </Section>
       <Section>
         <h2 className="title-font big subtitle work">Selected Work</h2>
-        <article className="card flex align-stretch">
-          <div className="card-left">
-            <img src="/images/logos/archway.png" alt="Archway Logo"/>
-            <p>2020 · Archway · Personal Project</p>
-            <h1 className="title-font">Pure JS toy web framework like React</h1>
-            <div className="flex">
-              <a href="#">Website</a>
-              <a href="#">Github</a>
-            </div>  
-          </div>
-          <div className="card-right flex align-center justify-center">
-            <img className="iphone" src="/images/mockups/archway.png" />
-          </div>
-        </article>
-        <article className="card flex align-stretch light">
-          <div className="card-left">
-            <img src="/images/logos/doodle.png" alt="Doodle Logo"/>
-            <p>2020 · Doodle · Personal Project</p>
-            <h1 className="title-font">A search engine that looks like Google</h1>
-            <div className="flex">
-              <a href="#">Website</a>
-              <a href="#">Github</a>
-            </div>  
-          </div>
-          <div className="card-right flex align-center justify-center">
-            <img className="mac" src="/images/mockups/doodle.png" />
-          </div>
-        </article>
-      </Section>
-      <Section>
-        <footer className="flex justify-between align-center">
-          <span>© 2020 Nathan Pham</span>
-          <span>
-            <a href="mailto:nathanpham.me@gmail.com">
-              <i className="fas fa-paper-plane"></i>
-              nathanpham.me@gmail.com
-            </a>
-          </span>
-        </footer>
+        { generateProjects(props) }
       </Section>
     </Root>
   )
 }
 
+const getStaticProps = async () => {
+  const projects = await import("../assets/data/projects.json")
+  return { props: projects.default }
+}
+
 export default Home
+export { getStaticProps }

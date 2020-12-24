@@ -105,8 +105,8 @@
 
                 &.iphone {
                     width: 20rem;
-                    bottom: -8rem;
-                    transform: rotate(10deg);
+                    left: 3rem;
+                    transform: rotate(10deg) translateY(20%);
                 }
                 
                 &.mac {
@@ -130,55 +130,12 @@
         }
 
         &:hover .card-right img.iphone {
-            transform: rotate(5deg);
+            transform: rotate(5deg) translateY(20%);
         }
 
         &:hover .card-right img.mac {
             transform: scale(1.15);
         }
     }
-    
-    /*
-    <article className="card">
-          <img src="https://avatars0.githubusercontent.com/u/74814006?s=200&v=4" alt="Archway Logo"/>
-          <p>2020 · Archway · Personal Project</p>
-          <h1>Making a toy web framework like React</h1>
-          <div className="flex">
-            <a href="#">Website</a>
-            <a href="#">Github</a>
-          </div>
-        </article>
-    */
-
-    footer {
-        padding: 3rem 0;
-
-        span {
-            a {            
-                color: #fff;
-                text-decoration: none;
-
-                i {
-                    margin: 0 1rem 0 0;
-                    transition: transform 0.2s ease;
-                }
-
-                &:hover {
-                    i {
-                        transform: translate(0.5rem, -0.5rem);
-                    }
-                }
-            }
-        }
-    }
 }
 
-/*
-<footer className="flex justify-between">
-          <span>© 2020 Nathan Pham</span>
-          <span>
-            <i className="fas fa-paper-plane"></i>
-            <a href="mailto:nathanpham.me@gmail.com">nathanpham.me@gmail.com</a>
-          </span>
-        </footer>
-*/

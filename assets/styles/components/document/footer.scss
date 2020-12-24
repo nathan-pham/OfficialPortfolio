@@ -1,0 +1,23 @@
+.root {
+    footer {
+        padding: 3rem 0;
+
+        span {
+            a {            
+                color: #fff;
+                text-decoration: none;
+
+                i {
+                    margin: 0 1rem 0 0;
+                    transition: transform 0.2s ease;
+                }
+
+                &:hover {
+                    i {
+                        transform: translate(0.5rem, -0.5rem);
+                    }
+                }
+            }
+        }
+    }
+}
