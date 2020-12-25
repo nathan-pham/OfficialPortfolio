@@ -13,7 +13,7 @@ const Home = () => {
         </figure>
       </Section>      
       <Section>
-        <h1 className="title-font big">Hey, I'm Nathan.</h1>
+        <h1 className="title-font big">Hey, 👋 I'm Nathan. </h1>
         <p>I'm a student at Del Oro High School, where I've had the honor of learning under some of the world's best teachers (my unbiased opinion of course). </p>
         <p>
           <s>A large majority of my time is spent on side projects, scrolling through cat videos, and snacking on tamales.</s> I am committed towards making my community more just, safe, and environmetally clean by pursuing opportunities in leadership. Along my journey, I've gained valuable experience in advocacy and government.
