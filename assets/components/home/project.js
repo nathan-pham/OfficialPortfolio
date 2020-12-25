@@ -1,6 +1,6 @@
-const Project = ({ name, time, type, scope, description, buttons }) => {
+const Project = ({ name, time, type, scope, description, buttons, n }) => {
     return (
-        <article className="card flex align-stretch light">
+        <article className={ `card flex align-stretch ${n % 2 == 0 ? "light" : "dark"}` }>
             <div className="card-left">
                 <img 
                     src={ `/images/logos/${ name.toLowerCase() }.png` } 

@@ -10,5 +10,17 @@
                 "href": "https://github.com/nathan-pham/doodle"
             }
         ]
+    },
+    "Neuromates": {
+        "time": "2020",
+        "type": "desktop",
+        "scope": "Commission",
+        "description": "Getting dementia patients resources",
+        "buttons": [
+            {
+                "display": "Website",
+                "href": "https://neuromates.com"
+            }
+        ]
     }
 }

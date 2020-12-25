@@ -5,10 +5,12 @@ import Project from "../assets/components/home/project"
 
 const generateProjects = (props) => {
   let projects = []
-  
+  let n = 0
   for(const [ key, value ] of Object.entries(props)) {
     const data = {
       name: key,
+      key,
+      n: n++,
       ...value
     }
     projects.push(
@@ -33,8 +35,8 @@ const Home = (props) => {
         <div className="flex socials">
           <Social href="mailto:nathanpham.me@gmail.com" icon="fas fa-envelope" />
           <Social href="https://github.com/nathan-pham" icon="fab fa-github" />
-          <Social href="https://twitter.com/npham23" icon="fab fa-twitter" />
-          <Social href="https://dev.to/npham23" icon="fab fa-dev" />
+          <Social href="https://twitter.com/phamn23" icon="fab fa-twitter" />
+          <Social href="https://dev.to/phamn23" icon="fab fa-dev" />
         </div>
       </Section>
       <Section>
