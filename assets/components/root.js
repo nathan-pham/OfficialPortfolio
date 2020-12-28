@@ -10,7 +10,7 @@ const Root = ({ title, description, children, back_header, no_header, no_footer 
             <div id={ rootName } className="root">
                 { no_header
                     ? <></>
-                    : <Header type={ !header ? "default" : "back" } />
+                    : <Header type={ !back_header ? "default" : "back" } />
                 }
                 { children }
                 { no_footer 
