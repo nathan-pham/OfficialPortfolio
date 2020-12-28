@@ -1,0 +1,38 @@
+#root-error {
+    .error-wrapper {
+        min-height: 100vh;
+        padding: 1rem;
+
+        .error-content {
+            text-align: center;
+            color: #fff;
+            
+            h1 {
+                margin: 0;
+            }
+    
+            h2 {
+                margin: 1rem 0;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin: 0 0 1rem 0;
+            }
+    
+            a {
+                font-size: 1.1rem;
+                color: #fff;
+    
+                i {
+                    margin: 0 1rem 0 0;
+                    transition: transform 0.2s ease;
+                }
+
+                &:hover i {
+                    transform: translateX(-0.5rem);
+                }
+            }
+        }
+    }
+}

@@ -2,15 +2,21 @@ import Header from "./document/header"
 import Footer from "./document/footer"
 import Seo from "./document/seo"
 
-const Root = ({ title, description, children, header }) => {
+const Root = ({ title, description, children, back_header, no_header, no_footer }) => {
     const rootName = `root-${ (title || "Home").toLowerCase() }`
     return (
         <>
             <Seo title={ title } description={ description } />
             <div id={ rootName } className="root">
-                <Header type={ !header ? "default" : "back" } />
+                { no_header
+                    ? <></>
+                    : <Header type={ !header ? "default" : "back" } />
+                }
                 { children }
-                <Footer />
+                { no_footer 
+                    ? <></>
+                    : <Footer />
+                }
             </div>
         </>
     )
