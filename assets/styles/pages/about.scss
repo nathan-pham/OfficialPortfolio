@@ -32,4 +32,29 @@
         border-radius: 0.5rem;
         margin: 2rem 0;
     }
+
+    .blog-post {
+        text-decoration: none;
+        color: #fff;
+        flex: 0 0 calc(50% - 1rem);
+        transition: transform 0.2s ease;
+
+        img {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        h2 {
+            margin: 1rem 0;
+        }
+        
+        p {
+            margin: 0;
+            color: var(--txt-grey);
+        }
+
+        &:hover {
+            transform: scale(1.025);
+        }
+    }
 }

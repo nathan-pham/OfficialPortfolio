@@ -1,7 +1,8 @@
 import Root from "../assets/components/root"
 import Section from "../assets/components/document/section"
+import Post from "../assets/components/about/post"
 
-const Home = () => {
+const Home = ({ posts }) => {
   return (
     <Root title="About">
       <Section>
@@ -24,11 +25,24 @@ const Home = () => {
           Interested in my skills & experience? Download my <a className="link" href="/resume.pdf">resume</a>.
         </div>
       </Section>
-      {/* <Section>
-        <h2 className="title-font big subtitle">Latest Blog Posts</h2>
-      </Section> */}
+      <Section>
+        <h2 className="title-font big subtitle">Latest Blog Posts 🖊️</h2>
+        <div className="flex justify-between">
+          {
+            posts.slice(0, 2).map(v => <Post { ...v }/>)
+          }
+        </div>
+      </Section>
     </Root>
   )
 }
 
+const getServerSideProps = async () => {
+  const posts = await fetch("https://dev.to/api/articles?username=phamn23").then(res => res.json())
+  return {
+    props: { posts }
+  }
+}
+
 export default Home
+export { getServerSideProps }
