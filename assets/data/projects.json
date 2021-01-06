@@ -1,13 +1,17 @@
 {
-    "Doodle": {
-        "time": "2020",
-        "type": "desktop",
+    "Intere": {
+        "time": "2021",
+        "type": "mobile",
         "scope": "Personal Project",
-        "description": "A search engine modeled after Google",
+        "description": "Visualize how viruses spread",
         "buttons": [
             {
                 "display": "Github",
-                "href": "https://github.com/nathan-pham/doodle"
+                "href": "https://github.com/nathan-pham/intere-app"
+            },
+            {
+                "display": "Google Play",
+                "href": "https://play.google.com/store/apps/details?id=io.ionic.intere"
             }
         ]
     },
@@ -20,6 +24,18 @@
             {
                 "display": "Website",
                 "href": "https://neuromates.com"
+            }
+        ]
+    },
+    "Doodle": {
+        "time": "2020",
+        "type": "desktop",
+        "scope": "Personal Project",
+        "description": "A search engine modeled after Google",
+        "buttons": [
+            {
+                "display": "Github",
+                "href": "https://github.com/nathan-pham/doodle"
             }
         ]
     }
