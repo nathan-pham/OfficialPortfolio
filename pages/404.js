@@ -9,7 +9,7 @@ const Error = () => {
                     <h2 className="big title title-font">Nothing here</h2>
                     <p>Well I don't see anything. Let's head back home.</p>
                     <a href="/" className="title-font">
-                        <i class="fas fa-arrow-left"></i>
+                        <i className="fas fa-arrow-left"></i>
                         Go Back
                     </a>
                 </div>
@@ -17,7 +17,5 @@ const Error = () => {
         </Root>
     )
 }
-
-//¯\_(ツ)_/¯ 
 
 export default Error
