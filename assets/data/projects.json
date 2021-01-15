@@ -22,6 +22,10 @@
         "description": "Getting dementia patients resources",
         "buttons": [
             {
+                "display": "Github",
+                "href": "https://github.com/nathan-pham/neuromates"
+            },
+            {
                 "display": "Website",
                 "href": "https://neuromates.com"
             }
