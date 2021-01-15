@@ -1,4 +1,5 @@
 const Project = ({ name, time, type, scope, description, buttons, n }) => {
+    n += 1
     return (
         <article className={ `card flex align-stretch ${n % 2 == 0 ? "light" : "dark"}` } key={ n }>
             <div className="card-left">
@@ -10,7 +11,7 @@ const Project = ({ name, time, type, scope, description, buttons, n }) => {
                 <h1 className="title-font">{ description }</h1>
                 <div className="flex">
                     {
-                        buttons.map(p => <a href={ p.href }>{ p.display }</a>)
+                        buttons.map((p, index) => <a href={ p.href } key={ index * n }>{ p.display }</a>)
                     }
                 </div>
             </div>
