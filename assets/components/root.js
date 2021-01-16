@@ -22,16 +22,11 @@ const Root = ({ title, description, children, back_header, no_header, no_footer 
             e.target.parentNode.tagName
         ].map(v => v.toLowerCase())
 
-        /**
-         * if (!event.target.closest('.click-me')) return;
-         */
-
          if(e.target.closest('a')) {
             Object.assign(nextStyle, {
                 width: "4rem",
                 height: "4rem"
             })
-            nextStyle.opacity = 0
         }
 
         setStyle(nextStyle)
