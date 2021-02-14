@@ -2,7 +2,6 @@ import { useState } from "react"
 import Header from "./document/header"
 import Footer from "./document/footer"
 import Seo from "./document/seo"
-import next from "next"
 
 const Root = ({ title, description, children, back_header, no_header, no_footer }) => {
     const rootName = `root-${ (title || "Home").toLowerCase() }`
