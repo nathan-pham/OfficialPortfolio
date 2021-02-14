@@ -16,12 +16,7 @@ const Root = ({ title, description, children, back_header, no_header, no_footer 
             left: e.clientX
         }
 
-        let possible = [
-            e.target.tagName,
-            e.target.parentNode.tagName
-        ].map(v => v.toLowerCase())
-
-         if(e.target.closest('a')) {
+        if(e.target.closest('a')) {
             Object.assign(nextStyle, {
                 width: "4rem",
                 height: "4rem"
