@@ -29,7 +29,7 @@ const Home = ({ posts }) => {
         <h2 className="title-font big subtitle">Latest Blog Posts 🖊️</h2>
         <div className="flex justify-between">
           {
-            posts.slice(0, 2).map(v => <Post { ...v }/>)
+            posts.slice(0, 2).map((v, i) => <Post { ...v } key={i}/>)
           }
         </div>
       </Section>
