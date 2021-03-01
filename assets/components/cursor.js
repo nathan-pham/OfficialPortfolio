@@ -48,7 +48,7 @@ const Cursor = () => {
             opacity: hidden ? 0 : 1,
             height: `${expand ? 3.25: 2.5}rem`,
             width: `${expand ? 3.25 : 2.5}rem`,
-            transform: `translate(-50%, -50%) scale(${ click ? 0.8 : 1 })`
+            transform: `translate(-50%, -50%) scale(${ click ? 0.9 : 1 })`
          }}></div>
     )
 }
