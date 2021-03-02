@@ -25,14 +25,16 @@
     #cursor {
         position: fixed;
         z-index: 20;
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
         background: #fff;
         border-radius: 50%;
         pointer-events: none;
         mix-blend-mode: exclusion;
         transform: translate(-50%, -50%);
-        transition-property: left, top, opacity, height, width, transform;
-        transition: all 0.1s ease-out;
+        transition-property: left, top, opacity, transform;
+        transition: all 0.1s ease-out,
+                    width 0.3s ease,
+                    height 0.3s ease;
     }
 }

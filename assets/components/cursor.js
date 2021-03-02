@@ -50,8 +50,8 @@ const Cursor = ({ mobile }) => {
             left: `${position.x}px`,
             top: `${position.y}px`,
             opacity: (hidden || position.x === "-") ? 0 : 1,
-            height: `${expand ? 4: 2.5}rem`,
-            width: `${expand ? 4 : 2.5}rem`,
+            height: `${expand ? 4: 1.5}rem`,
+            width: `${expand ? 4 : 1.5}rem`,
             transform: `translate(-50%, -50%) scale(${ click ? 0.85 : 1 })`
          }}></div>
     )
