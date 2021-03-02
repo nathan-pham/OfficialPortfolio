@@ -7,7 +7,7 @@ const Home = ({ posts }) => {
     <Root title="About">
       <Section>
         <figure className="hero">
-          <img src="/images/hero.jpeg" alt="Speaking at a YLA session" />
+          <div className="hero-image"></div>
           <figcaption>
             Speaking at a YLA Session
           </figcaption>
