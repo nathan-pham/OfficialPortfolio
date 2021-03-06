@@ -40,8 +40,9 @@ const Home = (props) => {
         </div>
       </Section>
       <Section>
-        <h2 className="title-font big subtitle work">Selected Work 💻</h2>
+        <h2 className="title-font big subtitle">Selected Work 💻</h2>
         { generateProjects(props) }
+        {/* <h2 className="title-font big subtitle">Experiments ⚗️ & Designs 📝</h2> */}
       </Section>
     </Root>
   )
