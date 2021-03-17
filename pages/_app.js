@@ -8,10 +8,8 @@ import "../assets/styles/globals.scss"
 import "../assets/styles/layout.scss"
 import "../assets/styles/theme.scss"
 
-const App = ({ Component, pageProps }) => {
-  return (
-    <Component { ...pageProps } />
-  )
-}
+const App = ({ Component, pageProps }) => (
+  <Component { ...pageProps } />
+)
 
 export default App
