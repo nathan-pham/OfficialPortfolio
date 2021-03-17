@@ -3,23 +3,12 @@ import Section from "../assets/components/document/section"
 import Social from "../assets/components/home/social"
 import Project from "../assets/components/home/project"
 
-const generateProjects = (props) => {
-  let projects = []
-  let n = 0
-  for(const [ key, value ] of Object.entries(props)) {
-    const data = {
-      name: key,
-      key,
-      n: n++,
-      ...value
-    }
-    projects.push(
-      <Project { ...data }/>
-    )
-  }
-
-  return projects
-}
+const generateProjects = (projects) => (
+  Object.keys(projects).reduce((acc, cur, i) => ([
+    ...acc,
+    <Project key={ i } n={ i } name={ cur } { ...projects[cur] } />
+  ]), [])
+)
 
 const Home = (props) => {
   return (
